@@ -1,0 +1,46 @@
+h1{
+    color: green;
+    text-align: center;
+    white-space: normal;
+}
+h2{
+    color: green;
+    text-align: center;
+    
+}
+body{
+    width: 80%;
+    text-align:center;
+    margin:0 auto;
+}
+p{
+    text-align:justify;
+}
+article{
+    background-color: lightgreen;
+    height: 450px;
+    width:30%;
+    border-style: solid ;
+    border-color: darkgreen;
+    border-width: 2px;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+section{
+    text-align: center;
+}
+.text-p1{
+height: 170px;
+}
+span{
+    font-weight: bold;
+}
+img{
+    display: inline-block;
+    height: 50%;
+    width:100%;
+    vertical-align: top;
+}
+
+

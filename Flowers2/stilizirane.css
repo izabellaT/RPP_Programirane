@@ -1,0 +1,48 @@
+nav{
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    font-size: 22px;
+}
+a
+{
+text-decoration: none;
+color:lightcoral;
+padding-left: 10px;
+padding-right: 10px;
+font-weight:bold ;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+} 
+h1{
+    text-align: center;
+    font-weight:bold ;
+}
+
+img{
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+}
+p{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+article{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+}
+section{
+        background-color: lightcoral;
+        color : white;
+}

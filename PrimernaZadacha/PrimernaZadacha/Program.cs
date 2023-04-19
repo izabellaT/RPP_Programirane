@@ -12,7 +12,6 @@ namespace PrimernaZadacha
             while (true)
             {
                 List<string> curent = Console.ReadLine().Split(' ').ToList();
-                
                 if (curent[0] == "stop")
                 {
                     Console.WriteLine("[{0}]", string.Join(", ", input));
@@ -25,19 +24,11 @@ namespace PrimernaZadacha
                     int element = int.Parse(curent[2]);
                     input.Insert(index, element);
                 }
-               
+
                 if (curent[0] == "contains")
                 {
                     int serachedNumber = int.Parse(curent[1]);
-                    if (input.Contains(serachedNumber))
-                    {
-                            Console.WriteLine(serachedNumber);
-                    }
-                    else
-                    {
-                        Console.WriteLine("-1");
-                    }
-                }
+                    Console.WriteLine(input.IndexOf(serachedNumber));
 
                 if (curent[0] == "remove")
                 {
@@ -57,19 +48,27 @@ namespace PrimernaZadacha
                 if (curent[0] == "removeAll")
                 {
                     int element = int.Parse(curent[1]);
-                    input.RemoveAll(x => x==element);
+
+                    input.RemoveAll(x => x == element);
+
                 }
 
                 if (curent[0] == "printGreater")
                 {
                     int element = int.Parse(curent[1]);
-                        if (input[0] > element)
+
+                    for (int i = 0; i < input.Count; i++)
+                    {
+                        if (input[i] > element)
                         {
-                        Console.WriteLine(string.Join(" ", input));
+                            Console.Write(input[i] + " ");
                         }
                     }
+                    Console.WriteLine();
+                    }
+
                 }
             }
         }
     }
-
+}
